@@ -2,9 +2,8 @@
 //     console.log("Hello");
 // }
 
-let greet = () => { //la sintaxis de la funcion  
-    console.log("Hello"); //cambia completamente
-}
+let greet = () => console.log("Hello"); //la sintaxis de la funcion  
+                                        //cambia completamente
 
 greet() //invoke.
 
@@ -13,9 +12,8 @@ greet() //invoke.
 //     fn();
 // }
 
-let logGreeting = fn => { //cuando se tiene solo un parametro
-    fn(); //se ahorran los parentesis, pero normalmente se meten ahí.
-}
+let logGreeting = fn => fn(); //cuando se tiene solo un parametro 
+                             //se ahorran los parentesis, pero normalmente se meten ahí.
 
 logGreeting(greet);
 /* Estamos pasando la función greet
@@ -23,7 +21,7 @@ como parametro e invocandola con el
 nombre del argumento fn*/
 
 //Function expression
-// let greetMe = function () {
+// let greetMe = function () {      "es una variable cuyo contenido es una funcion"
 //     console.log('Hello from the function expression');
 // }
 
